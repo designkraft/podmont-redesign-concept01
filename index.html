@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PodMont — Your AirPods. On Your Phone. Always.</title>
+  <meta name="description" content="The secure, no-residue AirPods phone mount. $15 · 5 bold colors · Ships July 1." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ 1. ANNOUNCEMENT BAR ============ -->
+  <div class="announcement" aria-label="Site announcements">
+    <div class="announcement__track">
+      <span class="announcement__item">$15&nbsp;&nbsp;·&nbsp;&nbsp;5 Bold Colors&nbsp;&nbsp;·&nbsp;&nbsp;Ships July 1&nbsp;&nbsp;·&nbsp;&nbsp;Limited Quantities&nbsp;&nbsp;·&nbsp;&nbsp;Free Shipping Over $60&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+      <span class="announcement__item">$15&nbsp;&nbsp;·&nbsp;&nbsp;5 Bold Colors&nbsp;&nbsp;·&nbsp;&nbsp;Ships July 1&nbsp;&nbsp;·&nbsp;&nbsp;Limited Quantities&nbsp;&nbsp;·&nbsp;&nbsp;Free Shipping Over $60&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+      <span class="announcement__item" aria-hidden="true">$15&nbsp;&nbsp;·&nbsp;&nbsp;5 Bold Colors&nbsp;&nbsp;·&nbsp;&nbsp;Ships July 1&nbsp;&nbsp;·&nbsp;&nbsp;Limited Quantities&nbsp;&nbsp;·&nbsp;&nbsp;Free Shipping Over $60&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+      <span class="announcement__item" aria-hidden="true">$15&nbsp;&nbsp;·&nbsp;&nbsp;5 Bold Colors&nbsp;&nbsp;·&nbsp;&nbsp;Ships July 1&nbsp;&nbsp;·&nbsp;&nbsp;Limited Quantities&nbsp;&nbsp;·&nbsp;&nbsp;Free Shipping Over $60&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ============ 2. NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="PodMont home">
+        <img src="https://podmont.com/wp-content/uploads/2026/02/cropped-PodMont_Logo-04.webp" alt="PodMont" />
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#top">Home</a>
+        <a href="https://podmont.com/shop/">Shop All</a>
+        <a href="#features">About</a>
+        <a href="#faqs">FAQs</a>
+      </nav>
+
+      <div class="nav__right">
+        <a href="https://podmont.com/shop/" class="nav__cart" aria-label="Cart">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </a>
+        <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ 3. HERO ============ -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <h1 class="hero__title">Your AirPods.<br />On your phone.<br /><span class="accent">Always.</span></h1>
+          <p class="hero__sub">The secure, no-residue AirPods mount. <strong>$15</strong> · Ships July 1.</p>
+
+          <div class="hero__cta">
+            <a href="https://podmont.com/shop/" class="btn btn--primary">Pick Your Color — $15</a>
+            <a href="#video" class="btn btn--ghost js-scroll">See How It Works ↓</a>
+          </div>
+
+          <div class="picker">
+            <div class="picker__swatches" role="radiogroup" aria-label="Choose a color">
+              <button class="swatch is-active" role="radio" aria-checked="true"
+                style="--sw:#1b1b1b"
+                data-color="Black Berry"
+                data-img="https://podmont.com/wp-content/uploads/2026/03/Family-Shoot-black-768x768.webp"
+                aria-label="Black Berry"></button>
+              <button class="swatch" role="radio" aria-checked="false"
+                style="--sw:#8a9099"
+                data-color="Cool Grey"
+                data-img="https://podmont.com/wp-content/uploads/2026/05/Family-Shoot-cool-grey-768x768.webp"
+                aria-label="Cool Grey"></button>
+              <button class="swatch" role="radio" aria-checked="false"
+                style="--sw:#E8560A"
+                data-color="Orange Glow"
+                data-img="https://podmont.com/wp-content/uploads/2026/05/Family-Shoot-orange-768x768.webp"
+                aria-label="Orange Glow"></button>
+              <button class="swatch" role="radio" aria-checked="false"
+                style="--sw:#C0201E"
+                data-color="Red Flag"
+                data-img="https://podmont.com/wp-content/uploads/2026/05/Family-Shoot-red-768x768.webp"
+                aria-label="Red Flag"></button>
+              <button class="swatch" role="radio" aria-checked="false"
+                style="--sw:#d98bbd"
+                data-color="Pink Pony"
+                data-img="https://podmont.com/wp-content/uploads/2026/05/Family-Shoot-purple-768x768.webp"
+                aria-label="Pink Pony"></button>
+            </div>
+            <p class="picker__label">Color: <strong id="colorLabel">Black Berry</strong></p>
+          </div>
+
+          <div class="countdown" aria-label="Time until launch">
+            <span class="countdown__heading">Ships In:</span>
+            <div class="countdown__units">
+              <div class="countdown__unit"><span id="cdDays">00</span><small>Days</small></div>
+              <div class="countdown__unit"><span id="cdHours">00</span><small>Hours</small></div>
+              <div class="countdown__unit"><span id="cdMins">00</span><small>Mins</small></div>
+              <div class="countdown__unit"><span id="cdSecs">00</span><small>Secs</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__imgwrap">
+            <img id="heroImg" src="https://podmont.com/wp-content/uploads/2026/03/Family-Shoot-black-768x768.webp" alt="PodMont AirPods phone mount in Black Berry" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. TRUST BAR ============ -->
+    <section class="trust" aria-label="Why buy with confidence">
+      <div class="trust__inner">
+        <div class="trust__item"><span class="trust__icon">🔒</span><span>No Residue Guaranteed</span></div>
+        <div class="trust__item"><span class="trust__icon">🇺🇸</span><span>Ships from USA</span></div>
+        <div class="trust__item"><span class="trust__icon">📦</span><span>Free Shipping Over $60</span></div>
+        <div class="trust__item"><span class="trust__icon">↩️</span><span>Easy Returns</span></div>
+      </div>
+    </section>
+
+    <!-- ============ 5. PULL QUOTE ============ -->
+    <section class="pullquote">
+      <div class="pullquote__inner">
+        <div class="pullquote__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="pullquote__text">
+          “As someone who goes to the gym five days a week, this is an absolute game changer. One of the best $15 purchases I've made this year.”
+        </blockquote>
+        <cite class="pullquote__cite">— Marcus</cite>
+      </div>
+    </section>
+
+    <!-- ============ 6. FEATURES ============ -->
+    <section class="features" id="features">
+      <div class="section-head">
+        <h2 class="section-title">Why PodMont</h2>
+        <p class="section-sub">Built to hold tight, leave clean, and look good doing it.</p>
+      </div>
+      <div class="features__grid">
+        <article class="feature">
+          <div class="feature__icon">🤝</div>
+          <h3>Secure Grip</h3>
+          <p>Locks onto your phone and holds your AirPods tight. No wobble, no slipping.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon">✨</div>
+          <h3>No Residue</h3>
+          <p>Sticks firmly, removes cleanly. Zero adhesive left behind.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon">👖</div>
+          <h3>Pocket-Friendly</h3>
+          <p>Rounded corners and a slimmed profile slide in and out without snagging.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__icon">🎨</div>
+          <h3>5 Bold Colors</h3>
+          <p>Black Berry, Orange Glow, Red Flag, Cool Grey, Pink Pony. Pick yours.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 7. VIDEO ============ -->
+    <section class="video" id="video">
+      <div class="section-head">
+        <h2 class="section-title">Set Up in 10 Seconds. Use It Forever.</h2>
+        <p class="section-sub">Watch how PodMont attaches to your phone or case.</p>
+      </div>
+      <div class="video__frame" id="videoFrame">
+        <video id="heroVideo" playsinline preload="metadata"
+          poster="https://podmont.com/wp-content/uploads/2026/04/PodMont-Light-Grey-Man-in-Cafe.webp">
+          <source src="https://podmont.com/wp-content/uploads/2026/04/Track-1-A-intense-mysterious-song-with-cinematic-rock-style-for-a-vlog-trailer.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <button class="video__play" id="videoPlay" aria-label="Play video">
+          <svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ 8. LIFESTYLE GRID ============ -->
+    <section class="lifestyle">
+      <div class="section-head">
+        <h2 class="section-title">Pocket. Purse. Gym. Beach. Wherever.</h2>
+      </div>
+      <div class="lifestyle__grid">
+        <figure class="lifestyle__cell lifestyle__cell--tall">
+          <img src="https://podmont.com/wp-content/uploads/2026/05/woman-podmont-phone-airpods-in-purse-Red.webp" alt="Red PodMont with phone and AirPods in a purse" loading="lazy" />
+        </figure>
+        <figure class="lifestyle__cell">
+          <img src="https://podmont.com/wp-content/uploads/2026/04/PodMont-Light-Grey-Man-in-Cafe.webp" alt="Man in a cafe using a light grey PodMont" loading="lazy" />
+        </figure>
+        <figure class="lifestyle__cell">
+          <img src="https://podmont.com/wp-content/uploads/2026/05/Orange-Podmont-Beanie-Female.webp" alt="Woman in a beanie holding an orange PodMont" loading="lazy" />
+        </figure>
+        <figure class="lifestyle__cell">
+          <img src="https://podmont.com/wp-content/uploads/2026/05/gym-pic-1.webp" alt="PodMont in use at the gym" loading="lazy" />
+        </figure>
+        <figure class="lifestyle__cell lifestyle__cell--wide">
+          <img src="https://podmont.com/wp-content/uploads/2026/04/PodMont-Red-Man-At-Beach.webp" alt="Man at the beach with a red PodMont" loading="lazy" />
+        </figure>
+      </div>
+      <div class="lifestyle__cta">
+        <a href="https://podmont.com/shop/" class="btn btn--primary">Buy Now</a>
+      </div>
+    </section>
+
+    <!-- ============ 9. REVIEWS CAROUSEL ============ -->
+    <section class="reviews" id="faqs">
+      <div class="section-head">
+        <h2 class="section-title">What People Are Saying</h2>
+      </div>
+      <div class="reviews__viewport" id="reviewsViewport">
+        <div class="reviews__track" id="reviewsTrack">
+          <article class="review">
+            <div class="review__stars">★★★★★</div>
+            <p class="review__text">“Honestly didn't expect to love a phone accessory this much. My AirPods are always right where I need them and the grip hasn't loosened once.”</p>
+            <p class="review__name">Sarah</p>
+          </article>
+          <article class="review">
+            <div class="review__stars">★★★★★</div>
+            <p class="review__text">“As someone who goes to the gym five days a week, this is an absolute game changer. One of the best $15 purchases I've made this year.”</p>
+            <p class="review__name">Marcus</p>
+          </article>
+          <article class="review">
+            <div class="review__stars">★★★★★</div>
+            <p class="review__text">“I was worried it would leave a sticky mess on my case, but it peels off perfectly clean. No residue at all, exactly as promised.”</p>
+            <p class="review__name">Priya</p>
+          </article>
+          <article class="review">
+            <div class="review__stars">★★★★★</div>
+            <p class="review__text">“Slides right into my pocket with my phone, no snagging. Stopped digging through my bag for my AirPods completely.”</p>
+            <p class="review__name">Devon</p>
+          </article>
+          <article class="review">
+            <div class="review__stars">★★★★★</div>
+            <p class="review__text">“Got the Orange Glow and it's gorgeous. Compliments every time I pull my phone out. Function and style for fifteen bucks.”</p>
+            <p class="review__name">Jenna</p>
+          </article>
+          <article class="review">
+            <div class="review__stars">★★★★★</div>
+            <p class="review__text">“Simple idea, brilliantly done. Took ten seconds to set up and I've never lost my AirPods since. Buying a few more as gifts.”</p>
+            <p class="review__name">Tom</p>
+          </article>
+          <article class="review">
+            <div class="review__stars">★★★★★</div>
+            <p class="review__text">“The grip is so secure I trust it on my morning runs. Holds firm no matter how much I move. Couldn't recommend it more.”</p>
+            <p class="review__name">Aaliyah</p>
+          </article>
+        </div>
+      </div>
+      <div class="reviews__controls">
+        <button class="reviews__btn" id="revPrev" aria-label="Previous reviews">‹</button>
+        <button class="reviews__btn" id="revNext" aria-label="Next reviews">›</button>
+      </div>
+    </section>
+
+    <!-- ============ 10. FINAL CTA ============ -->
+    <section class="finalcta">
+      <div class="finalcta__inner">
+        <h2 class="finalcta__title">Stop losing your AirPods.</h2>
+        <p class="finalcta__sub">PodMont keeps them on your phone. Always accessible. Always secure.</p>
+        <a href="https://podmont.com/shop/" class="btn btn--primary btn--lg">Get Yours for $15</a>
+      </div>
+    </section>
+
+    <!-- ============ 11. EMAIL CAPTURE ============ -->
+    <section class="capture">
+      <div class="capture__inner">
+        <h2 class="capture__title">Get early access deals and updates.</h2>
+        <form class="capture__form" id="captureForm" novalidate>
+          <input type="email" id="captureEmail" class="capture__input" placeholder="you@email.com" aria-label="Email address" required />
+          <button type="submit" class="btn btn--dark">Notify Me</button>
+        </form>
+        <p class="capture__success" id="captureSuccess" hidden>🎉 You're on the list! Watch your inbox for early access.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 12. FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="https://podmont.com/wp-content/uploads/2026/02/cropped-PodMont_Logo-04.webp" alt="PodMont" class="footer__logo" />
+        <p>Your AirPods. On your phone. Always.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="https://podmont.com/shop/">Shipping</a></li>
+          <li><a href="https://podmont.com/shop/">Returns</a></li>
+          <li><a href="https://podmont.com/">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#features">About</a></li>
+          <li><a href="https://podmont.com/shop/">Shop All</a></li>
+          <li><a href="https://podmont.com/">Blog</a></li>
+          <li><a href="https://podmont.com/">Privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <div class="footer__social">
+          <a href="https://facebook.com" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6v1.8h2.8L15.9 15h-2.3v7A10 10 0 0 0 22 12z"/></svg>
+          </a>
+          <a href="https://tiktok.com" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2 1.6 3.6 3.5 3.9v2.6c-1.3 0-2.5-.4-3.5-1v6.1a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v2.7a2.9 2.9 0 1 0 2 2.8V3h2.7z"/></svg>
+          </a>
+          <a href="https://instagram.com" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://linkedin.com" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-.9 1.8-1.9 3.6-1.9 3.8 0 4.5 2.5 4.5 5.8V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.4-2 2.7V21H9z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <p>© 2026 PodMont. All rights reserved.</p>
+      <p class="footer__disclaimer">AirPods is a trademark of Apple Inc., registered in the U.S. and other countries. PodMont is not affiliated with, endorsed by, or sponsored by Apple Inc.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
