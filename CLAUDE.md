@@ -38,13 +38,23 @@ as-is.
 
 ## Design system
 
+- **Visual direction: Ridge (ridge.com)** — monochrome and high-contrast,
+  uppercase condensed type, squared buttons, flat surfaces with crisp borders
+  (not soft shadows), a dark premium hero, and the orange accent used sparingly.
 - Tokens live in `:root` in `styles.css`. Reuse them; avoid hard-coded values.
-  - Primary dark: `--dark: #111`
-  - Accent (CTAs/highlights): `--accent: #E8560A` (Orange Glow);
-    secondary `--accent-2: #C0201E` (Red Flag)
-  - Backgrounds: white / `--bg-soft` for alternating bands
-- Buttons: `.btn` + a modifier (`--primary`, `--ghost`, `--dark`, `--lg`).
-  Rounded pill shape, bold, high contrast.
+  - Primary dark: `--ink: #0b0b0b` (near-black; `--dark: #111` still defined)
+  - Accent (sparing — CTAs hover / stars / eyebrows): `--accent: #E8560A`
+    (Orange Glow); secondary `--accent-2: #C0201E` (Red Flag)
+  - Backgrounds: white / `--bg-soft` for alternating bands; dark sections use `--ink`
+  - Squared corners: `--radius: 6px`, buttons `--radius-btn: 3px`
+- Typography: headings/labels are UPPERCASE with letter-spacing. Use the
+  `.eyebrow` (and `.eyebrow--accent`) kicker label above section titles.
+- Buttons: `.btn` + a modifier (`--primary` = solid near-black with orange
+  hover, `--ghost` = outlined, `--dark` = white-on-dark for dark sections,
+  `--lg`). Uppercase, letter-spaced, squared.
+- Section rhythm: dark hero → white trust bar → soft pull quote → white
+  features → soft video → white lifestyle → soft reviews → dark final CTA →
+  orange email band → dark footer.
 - Mobile-first; breakpoints at 900 / 760 / 520px. Generous whitespace —
   this is a premium impulse buy, not a dense catalog page.
 - Honor `prefers-reduced-motion` (already wired for the marquee & auto-scroll).
